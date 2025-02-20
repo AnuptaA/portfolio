@@ -1,7 +1,7 @@
 {
   "name": "frontend",
   "version": "0.1.0",
-  "homepage": "https://AnuptaA.github.io/AnuptaA-Website",
+  "homepage": "https://AnuptaA.github.io/portfolio",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
