@@ -26,7 +26,7 @@ export default function Home() {
         <div className="w-48 h-48 lg:w-80 lg:h-80 order-1 lg:order-2">
           <Image
             className="rounded-full"
-            src="/website-photo-2.png"
+            src="website-photo-2.png"
             width={320}
             height={320}
             quality={100}
