@@ -111,9 +111,9 @@ export default function Home() {
           {currPage === 0 && (
             <div>
               <p>
-                I'm a Third-Year student majoring in Computer Science at
+                I am a Third-Year student majoring in Computer Science at
                 Princeton University with minors in Statistics, Machine
-                Learning, Optimization, and Quantitative Decision Science. I'm
+                Learning, Optimization, and Quantitative Decision Science. I am
                 passionate about all aspects of software development and enjoy
                 creating applications that have real-world impact.
               </p>
@@ -147,7 +147,7 @@ export default function Home() {
 
           {currPage === 2 && (
             <div>
-              <p>Some of the coursework I've completed:</p>
+              <p>Some of the coursework I have completed:</p>
               <ul className="list-disc list-inside mt-2">
                 <li>
                   <strong>COS226: Algorithms and Data Structures:</strong>{" "}
