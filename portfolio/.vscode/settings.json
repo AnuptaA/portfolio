@@ -1,0 +1,24 @@
+{
+    // 1) Keep Prettier as default for JS/TS/etc.
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+  
+    // 2) Disable Prettier on .svelte files
+    "[svelte]": {
+      "editor.defaultFormatter": null,
+      "editor.formatOnSave": false
+    },
+  
+    // 3) Enable Svelte extension’s built‑in formatting
+    "svelte.plugin.format.enable": true,
+    "svelte.plugin.format.singleQuote": true,
+    "svelte.plugin.format.printWidth": 100,
+  
+    // 4) Ensure VS Code recognizes .svelte files
+    "files.associations": {
+      "*.svelte": "svelte"
+    },
+  
+    // 5) (Optional) If you still have html-format collisions
+    "html.format.enable": false
+  }
+  
