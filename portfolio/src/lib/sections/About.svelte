@@ -179,9 +179,9 @@
 		transition: all 0.3s ease;
 	}
 
-	.dark .social-icon {
+	/* .dark .social-icon {
 		color: #d1d5db;
-	}
+	} */
 
 	.social-icon.github:hover {
 		color: #000000;
