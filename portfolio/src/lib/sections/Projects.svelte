@@ -1,5 +1,10 @@
 <script lang="ts">
+    import { base } from '$app/paths';
 	import ProjectCard from '$lib/components/ProjectCard.svelte';
+    // import princeton_notes from "$lib/assets/PrincetonNotes_example.jpeg";
+    // import personal_website from "$lib/assets/personal_website.jpeg"
+    // import tigerrooms from "$lib/assets/TigerRooms_homepage.jpeg"
+    // import tigertrain from "$lib/assets/TigerTrain_homepage.jpeg"
 
 	const projects = [
 		{
@@ -11,7 +16,7 @@
             edit and moderate course-specific content. Admins manage
             general courses and platform content.`,
 			tech: ['React', 'TailwindCSS', 'Flask', 'PostgreSQL', 'AWS S3', 'Docker'],
-			imageUrl: '/PrincetonNotes_example.jpeg',
+			imageUrl: base + '/PrincetonNotes_example.jpeg',
 			projectLink: 'https://princetonnotes.onrender.com',
 			githubLink: 'https://github.com/ky6374/PrincetonNotes'
 		},
@@ -22,8 +27,8 @@
             my projects. The main goal of this project was to improve my frontend
             design skills.`,
 			tech: ['Svelte', 'TypeScript', 'TailwindCSS'],
-			imageUrl: '/personal_website.jpeg',
-			projectLink: '/#about',
+			imageUrl: base + '/personal_website.jpeg',
+			projectLink: 'https://anuptaa.github.io/portfolio',
 			githubLink: 'https://github.com/AnuptaA/portfolio'
 		},
 		{
@@ -34,7 +39,7 @@
             presenting them in a clean, interactive UI. Additional functionalities
             include individual and group room viewing, room reviews, and room favoriting.`,
 			tech: ['Flask', 'React', 'PostgreSQL', 'Pandas', 'Python PDF parsing'],
-			imageUrl: '/TigerRooms_homepage.jpeg',
+			imageUrl: base + '/TigerRooms_homepage.jpeg',
 			projectLink: '#',
 			githubLink: 'https://github.com/AnuptaA/TigerRooms'
 		},
@@ -45,7 +50,7 @@
             combining LeetCode-style practice with instant answer checking,
              step-by-step solutions, and GPT-powered help.`,
 			tech: ['Next.js', 'Flask', 'OpenAI API', 'PostgreSQL', 'Auth0', 'AWS'],
-			imageUrl: '/TigerTrain_homepage.jpeg',
+			imageUrl: base + '/TigerTrain_homepage.jpeg',
 			projectLink: '#',
 			githubLink: 'https://github.com/AnuptaA/COS397-IW'
 		}

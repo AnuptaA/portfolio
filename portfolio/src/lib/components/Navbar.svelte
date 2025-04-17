@@ -105,7 +105,7 @@
 	class="bg-navbar border-navbar fixed left-0 right-0 top-0 z-50 select-none border-b-2 px-6 py-3 shadow-sm backdrop-blur-sm"
 >
 	<div class="mx-auto flex max-w-7xl content-center items-center justify-between">
-		<div class="text-navbar text-md lg:text-lg font-semibold">Anupta Argo</div>
+		<div class="text-navbar text-md font-semibold lg:text-lg">Anupta Argo</div>
 
 		<!-- Desktop View -->
 		<div class="hidden gap-8 md:flex">
@@ -156,7 +156,7 @@
 	<!-- Mobile Navigation Menu -->
 	{#if menuOpen}
 		<div
-			class="mt-4 overflow-y-auto flex flex-col items-start gap-4 pb-4 md:hidden"
+			class="mt-4 no-scrollbar flex max-h-[80vh] flex-col items-start gap-4 overflow-y-auto pb-4 md:hidden"
 			transition:slide={{ duration: 350 }}
 		>
 			{#each sections as section}
@@ -172,3 +172,15 @@
 		</div>
 	{/if}
 </nav>
+
+<style>
+	@layer utilities {
+		.no-scrollbar::-webkit-scrollbar {
+			display: none;
+		}
+		.no-scrollbar {
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+		}
+	}
+</style>

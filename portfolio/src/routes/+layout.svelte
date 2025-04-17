@@ -5,6 +5,10 @@
 	import { onMount } from 'svelte';
 	import type { SvelteComponent } from 'svelte';
 
+	// Import favicons from assets
+	// import favicon from '$lib/assets/favicon.ico';
+	// import appleTouchIcon from '$lib/assets/apple-touch-icon.png';
+
 	let navbar: SvelteComponent;
 	let navbarHeight = 0;
 	let navbarElement: HTMLElement;
@@ -29,6 +33,13 @@
 	});
 </script>
 
+<!-- <svelte:head>
+	<link rel="icon" href={favicon} sizes="any" />
+	<link rel="apple-touch-icon" href={appleTouchIcon} />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+</svelte:head> -->
+
 <Navbar bind:this={navbar} />
 <main class="scroll-smooth">
 	<slot />
@@ -48,4 +59,3 @@
 		z-index: 10;
 	}
 </style>
-

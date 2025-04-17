@@ -136,7 +136,7 @@
 
 <section id="coursework" class="bg-primary animate-fade-in px-4 py-24 md:px-8 lg:px-16">
 	<div class="mx-auto max-w-6xl">
-		<h2 class="text-dark mb-8 text-4xl font-bold md:text-5xl">Coursework</h2>
+		<h2 class="text-dark mb-8 text-4xl font-bold md:text-5xl">Relevant Coursework</h2>
 		<p class="text-dark mb-12 max-w-3xl text-lg opacity-80">
 			During my time at Princeton University, I've taken the following courses that have shaped my
 			technical expertise and approach to problem-solving.

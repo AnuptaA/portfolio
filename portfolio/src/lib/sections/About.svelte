@@ -1,7 +1,12 @@
+<script lang="ts">
+	import { base } from '$app/paths';
+	// import linkedin_photo from "$lib/assets/LinkedIn_photo.jpg";
+</script>
+
 <div class="h-[52px] bg-white"></div>
 <section
 	id="about"
-	class="about-gradient min-height-full flex scroll-mt-24 py-0 md:py-8 items-center justify-center"
+	class="about-gradient min-height-full flex scroll-mt-24 items-center justify-center py-0 md:py-8"
 >
 	<div class="container mx-auto px-6 py-8 md:px-12">
 		<div class="flex flex-col items-center gap-8 lg:flex-row lg:gap-12">
@@ -28,7 +33,7 @@
 							></div>
 							<img
 								class="border-navbar relative m-auto w-4/5 rounded-2xl border-2 object-cover shadow-lg"
-								src="/LinkedIn_photo.jpg"
+								src="{base}/LinkedIn_photo.jpg"
 								alt="Anupta Argo's professional headshot"
 							/>
 						</div>
@@ -42,7 +47,7 @@
 					<div class="text-light dark:text-light mb-8 space-y-4 text-lg">
 						<p class="animate-fade-in" style="animation-delay: 0.4s;">
 							I am a Third-Year student majoring in Computer Science at Princeton University with
-							interdisciplinary minors in Statistics, Machine Learning Optimization, and
+							interdisciplinary minors in Statistics, Machine Learning, Optimization, and
 							Quantitative Decision Science.
 						</p>
 
@@ -128,7 +133,7 @@
 					></div>
 					<img
 						class="border-navbar relative w-full rounded-2xl border-2 object-cover shadow-lg"
-						src="/LinkedIn_photo.jpg"
+						src="{base}/LinkedIn_photo.jpg"
 						alt="Anupta Argo's professional headshot"
 					/>
 				</div>

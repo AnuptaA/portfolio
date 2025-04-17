@@ -1,25 +1,26 @@
 <script lang="ts">
+    import { base } from '$app/paths';
 	import ExperienceItem from '$lib/components/ExperienceItem.svelte';
 
 	const experiences = [
 		{
-			role: 'Full-Stack Intern',
+			role: 'Incoming Intern',
 			company: 'Cofactor AI',
 			date: 'Incoming',
-			description: `Will be working this summer.`,
+			description: `To work as a full-stack developer this summer.`,
 			skills: ['TBD'],
-			imageUrl: '/cofactor_logo.png'
+			imageUrl: base + '/cofactor_logo.png'
 		},
 		{
 			role: 'Full-Stack Intern',
 			company: 'Princeton University',
 			date: 'April 2025 - Present',
-			description: `Building a web application for a Princeton professor 
+			description: `Building a web application for Professor Purcell Carson
             as part of the Trenton Project, aimed at supporting the greater 
             Trenton community. Responsible for both frontend and backend 
             development, as well as DevOps infrastructure.`,
 			skills: ['JavaScript', 'jQuery', 'Python', 'CSS', 'DevOps'],
-			imageUrl: '/Princeton_University_Logo.png'
+			imageUrl: base + '/Princeton_University_Logo.png'
 		},
 		{
 			role: 'Software Engineering Intern',
@@ -27,10 +28,10 @@
 			date: 'Jan 2025 - Present',
 			description: `Developing and maintaining the Princeton Physics
              tutoring portal used by hundreds of students, admins, and course staff. 
-		    Improved platform performance by 2–3x and implemented several 3-tiered
+		    Improved platform performance times by 2–3x and implemented several 3-tiered
              features with full-stack coverage.`,
 			skills: ['Flask', 'Git', 'CI/CD', 'HTML/CSS', 'REST API'],
-			imageUrl: '/princeton_physics_logo.png'
+			imageUrl: base + '/princeton_physics_logo.png'
 		},
 		{
 			role: 'Junior Software Developer',
@@ -42,7 +43,7 @@
                Contributing across the full stack with a focus on inclusive design, 
                course moderation, and system-level features.`,
 			skills: ['React', 'Flask', 'Git', 'CAS Auth', 'Docker', 'PostgreSQL', 'AWS S3'],
-			imageUrl: '/tigerapps_logo.png'
+			imageUrl: base + '/tigerapps_logo.png'
 		}
 	];
 </script>

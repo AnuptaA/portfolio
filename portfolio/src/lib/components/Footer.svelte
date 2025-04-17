@@ -37,7 +37,7 @@
 							<p class="text-dark text-xs opacity-60">Email</p>
 							<a
 								href="mailto:anupta22@gmail.com"
-								class="text-dark hover:text-accent text-sm transition-colors">anupta22@gmail.com</a
+								class="text-navbar text-navbar-hover text-sm transition-colors">anupta22@gmail.com</a
 							>
 						</div>
 					</div>
@@ -80,27 +80,31 @@
 				<h3 class="text-dark mb-1 text-base font-bold">Navigation</h3>
 				<ul class="space-y-1 text-sm">
 					<li>
-						<a href="#about" class="nav-link-hover text-dark hover:text-accent transition-colors">About</a>
+						<a href="#about" class="text-navbar text-navbar-hover transition duration-300">About</a>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#experience" class="nav-link-hover text-dark hover:text-accent transition-colors"
+						<a href="#experience" class="text-navbar text-navbar-hover transition duration-300"
 							>Experience</a
 						>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#projects" class="nav-link-hover text-dark hover:text-accent transition-colors">Projects</a>
+						<a href="#projects" class="text-navbar text-navbar-hover transition duration-300"
+							>Projects</a
+						>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#coursework" class="nav-link-hover text-dark transition-colors"
+						<a href="#coursework" class="text-navbar text-navbar-hover transition duration-300"
 							>Coursework</a
 						>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#skills" class="nav-link-hover text-dark hover:text-accent transition-colors">Skills</a>
+						<a href="#skills" class="text-navbar text-navbar-hover transition duration-300"
+							>Skills</a
+						>
 					</li>
 				</ul>
 			</div>
@@ -117,7 +121,7 @@
 						<a
 							href="https://www.github.com/anuptaa"
 							target="_blank"
-							class="bg-tertiary text-dark hover:bg-accent flex h-8 w-8 items-center justify-center rounded-full transition-all hover:text-white"
+							class="bg-tertiary text-dark text-navbar-hover flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 hover:text-white"
 							aria-label="GitHub Link"
 						>
 							<svg
@@ -135,7 +139,7 @@
 						<a
 							href="https://www.LinkedIn.com/in/anupta-argo"
 							target="_blank"
-							class="bg-tertiary text-dark hover:bg-accent flex h-8 w-8 items-center justify-center rounded-full transition-all hover:text-white"
+							class="bg-tertiary text-dark text-navbar-hover flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 hover:text-white"
 							aria-label="LinkedIn Link"
 						>
 							<svg
@@ -151,9 +155,9 @@
 							</svg>
 						</a>
 						<a
-							href="https://www.instagram.com"
+							href="https://www.instagram.com/nolimitnupta"
 							target="_blank"
-							class="bg-tertiary text-dark hover:bg-accent flex h-8 w-8 items-center justify-center rounded-full transition-all hover:text-white"
+							class="bg-tertiary text-dark text-navbar-hover flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 hover:text-white"
 							aria-label="Instagram Link"
 						>
 							<svg
@@ -226,9 +230,3 @@
 		</div>
 	</div>
 </footer>
-
-<style>
-	.nav-link-hover:hover {
-		color: var(--color-accent);
-	}
-</style>
