@@ -7,6 +7,7 @@
 			'JavaScript',
 			'TypeScript',
 			'Python',
+            'Java',
 			'Go',
 			'SQL',
 			'R',

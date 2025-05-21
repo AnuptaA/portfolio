@@ -1,3 +1,15 @@
+<!-- Footer.svelte -->
+<script lang="ts">
+	// Function to handle smooth scrolling for the footer links
+	function handleFooterNavClick(section: string): void {
+		// Scroll to the section
+		const sectionElement = document.getElementById(section);
+		if (sectionElement) {
+			sectionElement.scrollIntoView({ behavior: 'smooth' });
+		}
+	}
+</script>
+
 <footer class="bg-primary border-tertiary border-t px-3 pb-8 pt-12 md:px-6 lg:px-12">
 	<div class="mx-auto max-w-6xl">
 		<!-- Main Footer Content -->
@@ -5,9 +17,9 @@
 			<!-- Left - Bio & Contact -->
 			<div class="md:col-span-5">
 				<div class="mb-4">
-					<a href="/" class="inline-block">
+					<div class="inline-block">
 						<h2 class="text-dark text-xl font-bold">Anupta Argo</h2>
-					</a>
+					</div>
 					<p class="text-dark mt-1 max-w-md text-sm opacity-80">
 						I learned basic Svelte while designing this website :)
 					</p>
@@ -37,7 +49,8 @@
 							<p class="text-dark text-xs opacity-60">Email</p>
 							<a
 								href="mailto:anupta22@gmail.com"
-								class="text-navbar text-navbar-hover text-sm transition-colors">anupta22@gmail.com</a
+								class="text-navbar text-navbar-hover text-sm transition-colors"
+								>anupta22@gmail.com</a
 							>
 						</div>
 					</div>
@@ -80,31 +93,53 @@
 				<h3 class="text-dark mb-1 text-base font-bold">Navigation</h3>
 				<ul class="space-y-1 text-sm">
 					<li>
-						<a href="#about" class="text-navbar text-navbar-hover transition duration-300">About</a>
+						<a
+							href="#about"
+							on:click|preventDefault={() => handleFooterNavClick('about')}
+							class="text-navbar text-navbar-hover transition duration-300"
+						>
+							About
+						</a>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#experience" class="text-navbar text-navbar-hover transition duration-300"
-							>Experience</a
+						<a
+							href="#experience"
+							on:click|preventDefault={() => handleFooterNavClick('experience')}
+							class="text-navbar text-navbar-hover transition duration-300"
 						>
+							Experience
+						</a>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#projects" class="text-navbar text-navbar-hover transition duration-300"
-							>Projects</a
+						<a
+							href="#projects"
+							on:click|preventDefault={() => handleFooterNavClick('projects')}
+							class="text-navbar text-navbar-hover transition duration-300"
 						>
+							Projects
+						</a>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#coursework" class="text-navbar text-navbar-hover transition duration-300"
-							>Coursework</a
+						<a
+							href="#coursework"
+							on:click|preventDefault={() => handleFooterNavClick('coursework')}
+							class="text-navbar text-navbar-hover transition duration-300"
 						>
+							Coursework
+						</a>
 					</li>
 					<div class="border-tertiary border-t"></div>
 					<li>
-						<a href="#skills" class="text-navbar text-navbar-hover transition duration-300"
-							>Skills</a
+						<a
+							href="#skills"
+							on:click|preventDefault={() => handleFooterNavClick('skills')}
+							class="text-navbar text-navbar-hover transition duration-300"
 						>
+							Skills
+						</a>
 					</li>
 				</ul>
 			</div>
@@ -115,7 +150,7 @@
 				<!-- Social Links -->
 				<div>
 					<p class="text-dark mb-4 text-sm opacity-80">
-						Follow me on social media (Links may not work if I am taking a break from a platform):
+						Here are some platforms where I am active!
 					</p>
 					<div class="flex space-x-3">
 						<a
@@ -154,24 +189,6 @@
 								/>
 							</svg>
 						</a>
-						<a
-							href="https://www.instagram.com/nolimitnupta"
-							target="_blank"
-							class="bg-tertiary text-dark text-navbar-hover flex h-8 w-8 items-center justify-center rounded-full transition-all duration-300 hover:text-white"
-							aria-label="Instagram Link"
-						>
-							<svg
-								xmlns="http://www.w3.org/2000/svg"
-								width="16"
-								height="16"
-								fill="currentColor"
-								viewBox="0 0 16 16"
-							>
-								<path
-									d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
-								/>
-							</svg>
-						</a>
 					</div>
 				</div>
 			</div>
@@ -183,10 +200,6 @@
 		<!-- Bottom Footer -->
 		<div class="flex flex-col items-center text-xs md:flex-row md:justify-between">
 			<div class="m-auto flex flex-col items-center md:flex-row">
-				<p class="text-dark opacity-70">
-					&copy; {new Date().getFullYear()} Anupta Argo. All rights reserved.
-				</p>
-				<div class="text-tertiary mx-2 hidden md:block">•</div>
 				<p class="text-dark flex items-center opacity-70">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -202,14 +215,16 @@
 							d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
 						/>
 					</svg>
-					Last updated: <span class="ml-1 font-medium">April 14, 2025</span>
+					Last updated: <span class="ml-1 font-medium">{new Date().toLocaleDateString()}</span>
 				</p>
 			</div>
 		</div>
 
 		<!-- Apple-inspired signature -->
 		<div class="text-dark mt-4 flex flex-col items-center text-center text-xs opacity-50">
-			<p>Inspired by Apple. Designed while being injured and unable to benchpress.</p>
+			<p>
+				Inspired by Apple. Developed while unaware of wrist fracture that led to bench press hiatus.
+			</p>
 			<div class="mt-1 flex items-center">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"

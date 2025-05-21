@@ -156,7 +156,7 @@
 	<!-- Mobile Navigation Menu -->
 	{#if menuOpen}
 		<div
-			class="mt-4 no-scrollbar flex max-h-[80vh] flex-col items-start gap-4 overflow-y-auto pb-4 md:hidden"
+			class="no-scrollbar mt-4 flex max-h-[80vh] flex-col items-start gap-4 overflow-y-auto pb-4 md:hidden"
 			transition:slide={{ duration: 350 }}
 		>
 			{#each sections as section}

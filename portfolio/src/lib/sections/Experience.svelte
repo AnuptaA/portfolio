@@ -11,17 +11,17 @@
 			skills: ['TBD'],
 			imageUrl: base + '/cofactor_logo.png'
 		},
-		{
-			role: 'Full-Stack Intern',
-			company: 'Princeton University',
-			date: 'April 2025 - Present',
-			description: `Building a web application for Professor Purcell Carson
-            as part of the Trenton Project, aimed at supporting the greater 
-            Trenton community. Responsible for both frontend and backend 
-            development, as well as DevOps infrastructure.`,
-			skills: ['JavaScript', 'jQuery', 'Python', 'CSS', 'DevOps'],
-			imageUrl: base + '/Princeton_University_Logo.png'
-		},
+		// {
+		// 	role: 'Full-Stack Intern',
+		// 	company: 'Princeton University',
+		// 	date: 'April 2025 - Present',
+		// 	description: `Building a web application for Professor Purcell Carson
+        //     as part of the Trenton Project, aimed at supporting the greater 
+        //     Trenton community. Responsible for both frontend and backend 
+        //     development, as well as DevOps infrastructure.`,
+		// 	skills: ['JavaScript', 'jQuery', 'Python', 'CSS', 'DevOps'],
+		// 	imageUrl: base + '/Princeton_University_Logo.png'
+		// },
 		{
 			role: 'Software Engineering Intern',
 			company: 'Princeton Physics',

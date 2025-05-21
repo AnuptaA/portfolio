@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { base } from '$app/paths';
-	// import linkedin_photo from "$lib/assets/LinkedIn_photo.jpg";
 </script>
 
 <div class="h-[52px] bg-white"></div>
@@ -46,22 +45,24 @@
 				<div class="mobile-scroll-content mt-2 lg:mt-0">
 					<div class="text-light dark:text-light mb-8 space-y-4 text-lg">
 						<p class="animate-fade-in" style="animation-delay: 0.4s;">
-							I am a Third-Year student majoring in Computer Science at Princeton University with
-							interdisciplinary minors in Statistics, Machine Learning, Optimization, and
-							Quantitative Decision Science.
+							I am a Third-Year student majoring in Computer Science at Princeton University
+							pursuing minors in Statistics, Machine Learning, Optimization, and Quantitative
+							Decision Science.
 						</p>
 
 						<p class="animate-fade-in" style="animation-delay: 0.6s;">
-							My passion lies in crafting innovative software solutions that address real-world
-							challenges. With a strong foundation in both theoretical principles and practical
-							implementation, I strive to develop applications that combine elegance and
-							functionality.
+							I’m especially drawn to challenges around building and optimizing distributed systems
+							which need to constantly scale, adapt, and maintain efficiency. My interests lie at
+							the intersection of parallel computing, networks, and ML, especially how ML can be used
+							to optimize large-scale systems.
 						</p>
 
 						<p class="animate-fade-in" style="animation-delay: 0.8s;">
-							I thrive in collaborative environments where continuous learning and creative
-							problem-solving are valued. I'm always seeking new opportunities to expand my
-							technical expertise and contribute to projects that make a meaningful impact.
+							Until recently, I’ve mostly worked across the full stack and developed an appreciation
+							for how software layers interact. Lately however, I’ve found myself more drawn to the
+							abstract challenges in distributed systems and ML, and I’m now actively shifting my
+							focus in that direction. I’m especially motivated by open-ended problems that don’t
+							have a single right answer and eager to keep learning through hands-on exploration.
 						</p>
 					</div>
 
@@ -165,13 +166,11 @@
 		background: linear-gradient(120deg, #001c38, #001927);
 		background-size: 400% 400%;
 		animation: gradientAnimation 10s ease infinite;
-		/* min-height: calc(100vh - var(--navbar-height, 60px)); */
 	}
 
 	/* Mobile optimization - ensure key content is visible first */
 	@media (max-width: 767px) {
 		.mobile-top-content {
-			/* min-height: calc(90vh - var(--navbar-height, 60px)); */
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
@@ -183,10 +182,6 @@
 		color: white;
 		transition: all 0.3s ease;
 	}
-
-	/* .dark .social-icon {
-		color: #d1d5db;
-	} */
 
 	.social-icon.github:hover {
 		color: #000000;
