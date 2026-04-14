@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /portfolio
 
 Sitemap: https://anuptaa.github.io/sitemap.xml
